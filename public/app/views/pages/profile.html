@@ -1,0 +1,188 @@
+<div class="profileView">
+
+   <div class="profileDiv">
+
+      <div class="persoProfileDiv">
+        <h3>Personal Info</h3>
+         <table>
+           <!-- Name field
+             ng-init will be changed for each tr
+             because i dont get other logic :P
+          -->
+            <tr>
+               <td>Name</td>
+               <td>:</td>
+               <td ng-init="editState1 = false">
+                  <span  ng-hide="editState1" >{{profile.user.name}}</span>
+                  <form ng-Submit = "profile.submitData()">
+                     <input ng-model="profile.upd.name"  type="text"   ng-show="editState1" />
+                     <button ng-click="editState1 = false" ng-show="editState1" type="submit">Save</button>
+                  </form>
+               </td>
+               <td><button ng-click="editState1 = true" ng-hide="editState1" type="button">Edit</button></td>
+            </tr>
+            <!-- Email field
+              ng-init will be changed for each tr
+              because i dont get other logic :P
+           -->
+            <tr>
+               <td>Email</td>
+               <td>:</td>
+               <td ng-init="editState2 = false">
+                  <span ng-hide="editState2" >{{profile.user.email}}</span>
+                  <form ng-Submit = "profile.submitData()">
+                     <input ng-model="profile.upd.email" type="text"   ng-show="editState2" />
+                     <button ng-click="editState2 = false" ng-show="editState2" type="submit" name="Save">Save</button>
+                  </form>
+               </td>
+               <td><button ng-click="editState2 = true" ng-hide="editState2" type="button" name="Edit">Edit</button></td>
+            </tr>
+            <!-- Password field
+              ng-init will be changed for each tr
+              because i dont get other logic :P
+           -->
+           <tr>
+              <td>Password</td>
+              <td>:</td>
+              <td ng-init="editState3 = false">
+                 <span ng-hide="editState3" >{{profile.user.password}}</span>
+                 <form ng-Submit = "profile.submitData()">
+                    <input ng-model="profile.upd.password" type="password"   ng-show="editState3" />
+                    <button ng-click="editState3 = false" ng-show="editState3" type="submit" >Save</button>
+                 </form>
+              </td>
+              <td><button ng-click="editState3 = true" ng-hide="editState3" type="button" >Edit</button></td>
+           </tr>
+           <!-- Interest field
+             ng-init will be changed for each tr
+             because i dont get other logic :P
+           -->
+           <tr>
+             <td>Interest</td>
+             <td>:</td>
+             <td ng-init="editState4 = false">
+                <span ng-hide="editState4" >{{profile.user.interest}}</span>
+                <form ng-Submit = "profile.submitData()">
+                   <input ng-model="profile.upd.interest" type="text"   ng-show="editState4" />
+                   <button ng-click="editState4 = false" ng-show="editState4" type="submit" name="Save">Save</button>
+                </form>
+
+             </td>
+             <td><button ng-click="editState4 = true" ng-hide="editState4" type="button" name="Edit">Edit</button></td>
+           </tr>
+           <!-- Profession field
+             ng-init will be changed for each tr
+             because i dont get other logic :P
+           -->
+           <tr>
+             <td>Profession</td>
+             <td>:</td>
+             <td ng-init="editState5 = false">
+                <span ng-hide="editState5" >{{profile.user.profession}}</span>
+                <form ng-Submit = "profile.submitData()">
+                   <input ng-model="profile.upd.profession" type="text"   ng-show="editState5" />
+                   <button ng-click="editState5 = false" ng-show="editState5" type="submit" name="Save">Save</button>
+                </form>
+             </td>
+             <td><button ng-click="editState5 = true" ng-hide="editState5" type="button" name="Edit">Edit</button></td>
+           </tr>
+           <!-- Institute field
+             ng-init will be changed for each tr
+             because i dont get other logic :P
+           -->
+           <tr>
+             <td>Institute</td>
+             <td>:</td>
+             <td ng-init="editState6 = false">
+                <span ng-hide="editState6" >{{profile.user.institute}}</span>
+                <form ng-Submit = "profile.submitData()">
+                   <input ng-model="profile.upd.institute" type="text"   ng-show="editState6" />
+                   <button ng-click="editState6 = false" ng-show="editState6" type="submit" name="Save">Save</button>
+                </form>
+             </td>
+             <td><button ng-click="editState6 = true" ng-hide="editState6" type="button" name="Edit">Edit</button></td>
+           </tr>
+
+         </table>
+
+      </div> <!-- persoProfileDiv End -->
+
+
+      <div class="progProfileDiv">
+        <h3>Technical Info</h3>
+         <table>
+            
+            <!-- Technologies field
+             ng-init will be changed for each tr
+             because i dont get other logic :P
+           -->
+           <tr>
+             <td>Technologies</td>
+             <td>:</td>
+             <td ng-init="editState7 = false">
+                <span ng-hide="editState7" >{{profile.user.technologies}}</span>
+                <form ng-Submit = "profile.submitData()">
+                   <input ng-model="profile.upd.technologies" type="text"   ng-show="editState7" />
+                   <button ng-click="editState7 = false" ng-show="editState7" type="submit">Save</button>
+                </form>
+             </td>
+             <td><button ng-click="editState7 = true" ng-hide="editState7" type="button">Edit</button></td>
+           </tr>
+
+            <!-- Frameworks field
+             ng-init will be changed for each tr
+             because i dont get other logic :P
+           -->
+           <tr>
+             <td>Frameworks</td>
+             <td>:</td>
+             <td ng-init="editState8 = false">
+                <span ng-hide="editState8" >{{profile.user.frameworks}}</span>
+                <form ng-Submit = "profile.submitData()">
+                   <input ng-model="profile.upd.frameworks" type="text"   ng-show="editState8" />
+                   <button ng-click="editState8 = false" ng-show="editState8" type="submit">Save</button>
+                </form>
+             </td>
+             <td><button ng-click="editState8 = true" ng-hide="editState8" type="button">Edit</button></td>
+           </tr>
+
+            <!-- Libraries field
+             ng-init will be changed for each tr
+             because i dont get other logic :P
+           -->
+           <tr>
+             <td>Libraries</td>
+             <td>:</td>
+             <td ng-init="editState9 = false">
+                <span ng-hide="editState9" >{{profile.user.libraries}}</span>
+                <form ng-Submit = "profile.submitData()">
+                   <input ng-model="profile.upd.libraries" type="text"   ng-show="editState9" />
+                   <button ng-click="editState9 = false" ng-show="editState9" type="submit">Save</button>
+                </form>
+             </td>
+             <td><button ng-click="editState9 = true" ng-hide="editState9" type="button">Edit</button></td>
+           </tr>
+
+            <!-- Database field
+             ng-init will be changed for each tr
+             because i dont get other logic :P
+           -->
+           <tr>
+             <td>Database</td>
+             <td>:</td>
+             <td ng-init="editState10 = false">
+                <span ng-hide="editState10" >{{profile.user.database}}</span>
+                <form ng-Submit = "profile.submitData()">
+                   <input ng-model="profile.upd.database" type="text"   ng-show="editState10" />
+                   <button ng-click="editState10 = false" ng-show="editState10" type="submit">Save</button>
+                </form>
+             </td>
+             <td><button ng-click="editState10 = true" ng-hide="editState10" type="button">Edit</button></td>
+           </tr>
+
+         </table>
+      </div> <!-- progProfileDiv End -->
+
+   </div><!-- profileDiv End -->
+
+</div> <!-- profileView End  -->

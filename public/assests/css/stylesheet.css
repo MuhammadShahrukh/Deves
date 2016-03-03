@@ -1,0 +1,685 @@
+*{
+   list-style: none;
+}
+body{
+   background-color: #F5F8FA;
+
+}
+
+
+/* Animating ng-view div */
+.ng-enter{
+   animation: fadeInLeft 0.5s;
+}
+.ng-leave{
+
+}
+/* ====================================================================== */
+
+/*
+Styling header(blue strip) ====================================
+*/
+.mainHeader{
+   /*border: 1px red solid;*/
+   background-color: #3097D1;
+   padding: 10px;
+   border-bottom: 1px #1C73A5 solid;
+   width: 1370px;
+   height: 78px;
+   position: relative;
+   box-shadow: 0px 1px 5px #A0A3AD;
+}
+/* ======================================================================== */
+
+
+
+
+/*
+Styling the title icon and heading  =====================================
+*/
+
+/* this class is applied on the div which contain i h1 tags */
+.titleDiv{
+   /*border: 1px red solid;*/
+   width: 90px;
+   display: inline-block;
+   position: absolute;
+   top: 10px;
+   left: 200px;
+}
+/* this class is applied on i tag */
+.icon{
+   /*border: 1px solid red;*/
+   margin: 0;
+   padding: 0;
+   margin-left: 27px;
+   margin-bottom: 3px;
+   color: #D1E8F0;
+}
+/* this class is applied on main title heading h1 tag */
+.title{
+   /*border: 1px red solid;*/
+   font-size: 13px;
+   font-family: 'Fjalla One', sans-serif;
+   margin: 0;
+   padding: 0;
+   padding: 3px 2px 2px 8px;
+   width: 87px;
+   letter-spacing: 10px;
+   color: #D1E8F0;
+   border-bottom: 2px solid #D1E8F0;
+   border-top: 2px solid #D1E8F0;
+}
+/* ===================================================================== */
+
+
+
+
+/*
+ styling main navigation of our website =================================
+*/
+
+/* this class is applied on main navigation un-ordered list ul tag */
+.mainNav{
+   /*border: 1px red solid;*/
+   width: 470px;
+   height: 30px;
+   display: inline-block;
+   vertical-align: top;
+   position: absolute;
+   top: 30px;
+   left: 660px;
+}
+/* making our navgiational list items in one line  li */
+.mainNav > li {
+   display: inline-block;
+   margin-left: 40px;
+}
+/* styling navigational a tags which are inside our li of ul */
+.mainNav > li > a{
+   font-size: 19px;
+   text-decoration: none;
+   color: #D1E8F0;
+   font-family: 'Rockwell Extra Bold', 'Rockwell Bold', monospace;
+   letter-spacing: 1.5px;
+}
+/* this class is applied on icon which is on devs navgiational menu */
+.mainNav i {
+   font-size: 13px;
+   margin-left: 0;
+   padding-left: 0;
+   display: inline-block;
+   color: #D1E8F0;
+}
+
+
+.userInfoDiv{
+   /*border: 1px solid red;*/
+   width: 170px;
+   font-size: 13px;
+   color: white;
+   background-color: rgba(58,58,58,0.7);
+   position: absolute;
+   top:0px;
+   right: 70px;
+   border-bottom-left-radius: 5px;
+   border-bottom-right-radius: 5px;
+}
+
+.userInfoDiv > ul{
+   margin: 0;
+   padding: 0;
+   padding-top: 5px;
+}
+.userInfoDiv > ul >li{
+   margin: 0;
+   padding: 2px 0 2px 0;
+   text-align: center;
+}
+
+.userInfoDiv > ul > li:hover{
+   text-decoration: underline;
+}
+.userInfoDiv a{
+   color: white;
+   text-align: center;
+}
+
+/* =================================================================== */
+
+
+
+
+
+/*
+ styling Home Page
+*/
+
+/* this class is applied on main div of homepage */
+.homeView{
+   /*border: 0.5px solid #D3E0E9;
+   width: 960px;
+   height: 400px;
+   margin: 50px 0 0 200px;
+   padding: 10px;
+   background-color: #FFFFFF;
+   box-shadow: 0.1px 0.1px 1.5px 0.5px #A0A3AD;
+   border-radius: 2px;*/
+   font-family: 'Rockwell Extra Bold', 'Rockwell Bold', monospace;
+   position: relative;
+}
+
+
+
+/* this class is applied on div which contain search box, input tag  */
+.homePageSearchDiv{
+   width: 940px;
+   border: 1px solid #D3E0E9;
+   background-color: #F5F8FA;
+   border-radius: 2px;
+   box-shadow: 0.1px 0.1px 1.5px 0.5px #A0A3AD;
+   position: absolute;
+   top: 30px;
+   left: 200px;
+}
+/* this class is applied on search box, input tag */
+.searchBox{
+   display: inline-block;
+   width: 920px;
+   height: 45px;
+   margin: 10px;
+   padding: 10px;
+   padding-left: 20px;
+   border-radius: 2px;
+   background-color: #fff;
+   border: 1px solid #D3E0E9;
+   font-size: 16px;
+   outline:none;
+}
+.searchedDiv{
+  width: 920px;
+  padding-left: 20px;
+  color: #F5F8FA;
+  color: black;
+  background-color: #ABCEF2;
+  background-color: rgba(0,0,0,0.5);
+  background-color: #fff;
+  border-left: 1px solid #D3E0E9;
+  border-right: 1px solid #D3E0E9;
+  border-bottom: 1px solid #D3E0E9;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  z-index: 1; 
+  position: absolute;
+  top: 55px;
+  left: 10px;
+}
+.searchedDiv a {
+  text-decoration: none;
+}
+#h3{
+  margin-top: 10px;
+}
+#p{
+  text-align: left;
+  margin-top: 0;
+}
+.searchedDiv.ng-enter{
+  animation: fadeIn 0.5s;
+}
+
+/* public div this is for public user  */
+.publicDiv{
+  width: 1348px;
+  height: 700px;
+  background-color: rgba(0,0,0,0.5);
+  position: absolute;
+  z-index: 10;
+}
+.publicDiv.ng-enter{
+  animation: fadeIn 0.6s;
+}
+.framePublicDiv{
+   border: 0.5px solid #D3E0E9;
+   margin-top: 20px;
+   width: 405px;
+   height: 185px;
+   background-color: #FFFFFF;
+   box-shadow: 0.1px 0.1px 1.5px 0.5px #A0A3AD;
+   border-radius: 2px;
+   font-family: 'Rockwell Extra Bold', 'Rockwell Bold', monospace;
+   color: #6B8992;
+   position: absolute;
+   top: 100px;
+   left: 500px;
+ }
+ .imgDivPublicDiv{
+  position: absolute;
+   top: 45px;
+   left: 25px;
+ }
+ #imgPublic{
+   width: 80px;
+   height: 80px;
+   padding: 5px;
+   border-radius: 70px;
+   background-color: #F5F8FA;
+   border: 1px solid #D3E0E9;
+   box-shadow: 0px 0px 5px 0px #A0A3AD;
+ }
+ .detailsPublicDiv{
+   padding: 5px 0 8px 0;
+   position: absolute;
+   top: 25px;
+   left: 127px;
+   padding-left: 20px;
+   border-left: 1px solid #A0A9C0;
+ }
+#paraPublic{
+  margin: 0;
+  padding: 0;
+  text-align: left;
+  line-height: 22px;
+}
+
+
+.detailsPublicDiv h5{
+  color: #2B0F1D;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+
+
+/*____________________________________________________________*/
+
+/* this class is for sir syed div */
+.sirsyedDiv{
+   width: 450px;
+   padding: 10px;
+   padding-top: 0px;
+   background-color: #fff;
+   border: 1px solid #D3E0E9;
+   box-shadow: 0.1px 0.1px 1.5px 0.5px #A0A3AD;
+   position: absolute;
+   top: 120px;
+   left: 200px;
+}
+.homeView h4{
+  padding: 10px;
+  margin-bottom: 15px;
+  background-color: #F5F5F5;
+  color: #78899C;
+  border-radius: 2px;
+  text-align: center;
+}
+.homeView img{
+  width: 427px;
+  height: 227px;
+  box-shadow: 0.1px 0.1px 1.5px 0.5px #A0A3AD;
+  border-radius: 2px;
+}
+.homeView p{
+  margin-top: 30px;
+  text-align: center;
+  line-height: 22px;
+  font-style: italic;
+}
+
+/* this class is for saylani div */
+.saylaniDiv{
+   width: 450px;
+   padding: 10px;
+   padding-top: 0px;
+   margin-bottom: 15px;
+   background-color: #fff;
+   border: 1px solid #D3E0E9;
+   box-shadow: 0.1px 0.1px 1.5px 0.5px #A0A3AD;
+   position: absolute;
+   top: 120px;
+   left: 690px;
+}
+/*===================================================================*/
+
+
+
+
+
+/*
+ styling About Page
+*/
+
+/* this class is applied on main div of About page */
+
+.aboutView{
+   padding: 10px;
+   position: relative;
+   font-family: 'Rockwell Extra Bold', 'Rockwell Bold', monospace;
+}
+
+/* this class is applied on panel, div which is about me */
+.aboutMeDiv{
+   width: 400px;
+   position: absolute;
+   top: 60px;
+   left: 40px;
+}
+/* this class is applied on div which contains my image
+   its main parent is aboutMeDiv
+ */
+.myImgDiv{
+   /*border: 1px red solid;*/
+   margin: 10px auto;
+   width: 135px;
+}
+
+/* this class is applied directly on img tag
+   its parent is myImgDiv
+ */
+.myImg{
+   width: 130px;
+   padding: 5px;
+   border-radius: 70px;
+   background-color: #F5F8FA;
+   border: 1px solid #D3E0E9;
+   box-shadow: 0px 0px 10px 0px #A0A3AD;
+}
+
+/* this class is applied on myDetailsDiv
+   its main parent is aboutMeDiv
+ */
+.myDetailsDiv{
+   /*border: 1px red solid;*/
+   margin-top: 40px;
+   text-align: center;
+   color: #6B8992;
+}
+/* styling table which contains my detaisl about technologies,
+   frameworks etc
+ */
+.myDetailsDiv table{
+   margin-top: 40px;
+   text-align: left;
+   font-size: 12px;
+}
+/* giving some space b/w columns and aligning text top */
+.myDetailsDiv td{
+   padding: 0px 10px 20px 10px;
+   vertical-align: top;
+}
+
+
+
+/* this class is applied on panel, div which is about project */
+.aboutProjectDiv{
+   width: 700px;
+   position: absolute;
+   top: 60px;
+   left: 500px;
+
+}
+.aboutProjectDiv p {
+  line-height: 30px;
+  font-style: italic;
+  font-size: 17px;
+  letter-spacing: 1px;
+  color: #6B8992;
+}
+
+/* ====================================================================== */
+
+
+
+/*
+   Styling Devs Page
+*/
+
+.uListDiv{
+
+}
+.uListDiv ul{
+   margin-top: 30px;
+   margin-left: 10px;
+}
+.uListDiv li {
+   margin-right: 17px;
+   display: inline-block;
+}
+
+
+
+/* this class is applied on Developer info div whose parent is
+   iListDiv, this will make a small frame of each developer info
+ */
+.devsInfoDiv{
+   border: 0.5px solid #D3E0E9;
+   margin-top: 20px;
+   width: 405px;
+   height: 185px;
+   background-color: #FFFFFF;
+   box-shadow: 0.1px 0.1px 1.5px 0.5px #A0A3AD;
+   border-radius: 2px;
+   position: relative;
+   font-family: 'Rockwell Extra Bold', 'Rockwell Bold', monospace;
+   color: #6B8992;
+}
+.devsInfoDiv > h6{
+  position: absolute;
+  top: 0px;
+  right:10px;
+}
+.imgOfDevsDiv{
+   position: absolute;
+   top: 55px;
+   left: 25px;
+}
+.devsImg{
+   width: 80px;
+   padding: 5px;
+   border-radius: 70px;
+   background-color: #F5F8FA;
+   border: 1px solid #D3E0E9;
+   box-shadow: 0px 0px 5px 0px #A0A3AD;
+}
+.detailsOfDevsDiv{
+  padding: 5px 0 4px 0;
+   position: absolute;
+   top: 25px;
+   left: 127px;
+   padding-left: 20px;
+   border-left: 1px solid #A0A9C0;
+}
+.detailsOfDevsDiv h5{
+  color: #2B0F1D;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+.detailsOfDevsDiv p{
+  line-height: 22px;
+}
+/* ======================================================================= */
+
+
+
+
+
+/*
+  styling deves private profile page for other users
+*/
+
+.devsPrivateView{
+  position: relative;
+}
+
+/* this class is for frame */
+.devsPrivateDiv{
+  width: 600px;
+  border: 0.5px solid #D3E0E9;
+  background-color: #FFFFFF;
+  box-shadow: 0.1px 0.1px 1.5px 0.5px #A0A3AD;
+  border-radius: 2px;
+  font-family: 'Rockwell Extra Bold', 'Rockwell Bold', monospace;
+  color: #6B8992;
+  text-align: center;
+  position: absolute;
+  top: 50px;
+  left: 350px;
+}
+
+.devsPrivateImgDiv img{
+   width: 130px;
+   padding: 5px;
+   margin: 20px 0 10px 0px;
+   border-radius: 100px;
+   background-color: #F5F8FA;
+   border: 1px solid #D3E0E9;
+   box-shadow: 0px 0px 10px 0px #A0A3AD;
+}
+.devsPrivateDiv h4{
+  margin-top: 20px;
+  color: #2B0F1D;
+  font-weight: bold;
+}
+.devsPrivateDiv p {
+  margin-top: 20px;
+  line-height: 25px;
+}
+.devsPrivateDiv table{
+  margin: 40px 0 10px 40px;
+  text-align: left;
+  font-size: 14px;
+}
+.devsPrivateDiv td{
+  padding: 0px 10px 20px 10px;
+  vertical-align: top;
+}
+.devsPrivateDiv h5{
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+
+
+
+/*==========================================================================*/
+
+
+
+
+/*
+   styling Login Page
+*/
+
+div.loginView{
+
+}
+
+.loginOrSignInDiv{
+   width: 500px;
+   margin-top:50px;
+   margin-left: 400px;
+}
+.loginFormDiv{
+   margin-top: 20px;
+   padding: 20px;
+}
+/* ======================================================================= */
+
+
+
+/*
+   styling sign up page
+*/
+
+.signupFormDiv{
+   margin-top: 20px;
+   padding: 20px;
+}
+
+/* styling alert messages on login and sign up forms */
+h5.alert{
+   margin-top: 30px;
+}
+h5.alert.ng-enter{
+   animation: bounceIn 1s;
+}
+
+
+/* ======================================================================= */
+
+
+
+
+/*
+   styling profile page
+*/
+
+
+.profileDiv{
+   /*border: 1px solid red;*/
+   margin: 50px 0px 0px 200px;
+   width: 890px;
+   height: 800px;
+   background-color: #fff;
+   font-family: 'Rockwell Extra Bold', 'Rockwell Bold', monospace;
+   box-shadow: 0.1px 0.1px 1.5px 0.5px #A0A3AD;
+   border: 0.5px solid #D3E0E9;
+   border-radius: 3px;
+   position: relative;
+}
+.profileDiv button{
+  border: none;
+  background-color: inherit;
+  color: #3097D1;
+  text-decoration: underline;
+  outline: none;
+}
+.profileDiv form {
+  display: inline;
+}
+.profileDiv table{
+  margin-top: 30px;
+}
+.profileDiv table td{
+  padding-bottom: 20px;
+}
+.profileDiv h3{
+  color: #6B8992;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-top: 2px dotted #DDDDDD;
+  border-bottom: 2px dotted #DDDDDD;
+}
+/* this class is applied on personalinfo div */
+.persoProfileDiv{
+   /*border: 1px solid red;*/
+   width: 890px;
+   padding: 30px;
+   position: absolute;
+}
+
+
+.persoProfileDiv td{
+  padding-right: 80px;
+  color: #6B8992;
+  letter-spacing: 1px;
+
+}
+
+/* this class is applied on programming info div */
+.progProfileDiv{
+  /*border: 1px solid red;*/
+  width: 890px;
+  padding: 30px;
+  position: absolute;
+  left: 0px;
+  top: 400px;
+}
+.progProfileDiv td{
+  padding-right: 80px;
+  color: #6B8992;
+  letter-spacing: 1px;
+}
+/* ======================================================================= */
+
+

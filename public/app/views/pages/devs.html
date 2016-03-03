@@ -1,0 +1,20 @@
+<div class="devsView">
+   <div class="uListDiv">
+      <ul>
+         <li ng-repeat = "dev in devs.allDevelopers">
+            <div class="devsInfoDiv">
+               <div class="imgOfDevsDiv">
+                  <img class="devsImg" src="assests/imgs/user.jpg" alt="" />
+               </div>
+               <div class="detailsOfDevsDiv">
+                     <h5>{{dev.name}}</h5>
+                     <p>
+                        {{dev.interest}}<br>
+                        {{dev.institute}}
+                     </p>
+               </div>
+            </div>
+         </li>
+      </ul>
+   </div>
+</div>

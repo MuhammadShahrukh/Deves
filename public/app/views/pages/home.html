@@ -1,0 +1,53 @@
+<div class="homeView">
+      <div class="homePageSearchDiv">
+         <input ng-model="home.name" ng-keyup="home.findUser($event)" class="searchBox" type="text" placeholder="Search Student by Name"/>
+         <div  ng-if="home.shortDetails" class="searchedDiv">
+               <a ng-click="home.explore()" href=""><h3 id="h3">{{home.shortDetails.name}}</h3>
+               <p id="p">
+                     {{home.shortDetails.profession}}<br>
+                     {{home.shortDetails.interest}}
+               </p></a>
+         </div>   
+      </div>
+      <div class="sirsyedDiv">
+      	<h4>SSUET's Continuing Eduation Program</h4>
+      	<img src="assests/imgs/ssuet.jpg">
+      	<p>
+      		Since its inception in 1997, The containing Education Program (CEP) at Sir Syed University of Engineering &amp; Technology has effectively fulfilled the career advancement needs of a very image number of working professionals including Engineers, Project Managers, Accountants, Financial Analysis. The student who to learn and gain professional knowledge by doing professional courses, have the opportunity at CEP which offers courses at flexible timings <a href="http://www.ssuet.edu.pk/cep/cep_main.php" target="_blank">Read more</a>
+      	</p>
+      </div>
+
+      <div class="saylaniDiv">
+      	<h4>Saylani Mass Training Program</h4>
+      	<img src="assests/imgs/saylani.jpg">
+      	<p>
+      		Saylani Mass Training &amp; Job creation Program is DevBootcamp , which calls itself an “apprenticeship on steroids, ” is one of a new breed of computer programming  school that’s proliferating in San Francisco and other US tech hubs. These “hacker boot camps  ” promise to teach students how to write code in two or three months and help them get hired as web developers, with starting salaries between $500 – $1000, often within days or <a href="http://saylaniwelfare.com/mass-training-program" target="_blank">Read more</a>
+      	</p>
+      </div>
+
+
+
+       <!-- for public user, it will show details of searched one,
+            placed in the end so it will take full home page
+        -->
+         <div ng-if="home.publicDiv" ng-click="home.hidePublicDiv()" class="publicDiv">
+               
+
+            <div class="framePublicDiv">
+               <div class="imgDivPublicDiv">
+                  <img id="imgPublic" src="assests/imgs/user.jpg" />
+               </div>
+               <div class="detailsPublicDiv">
+                     <h5 >{{home.shortDetails.name}}</h5>
+                     <p id="paraPublic">
+                        {{home.shortDetails.interest}}<br>
+                        {{home.shortDetails.profession}}<br>
+                        {{home.shortDetails.institute}}
+                     </p>   
+               </div>
+            </div>
+
+
+         </div>
+
+</div>

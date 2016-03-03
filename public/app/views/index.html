@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html ng-app="devs">
+   <head>
+      <meta charset="utf-8">
+      <title></title>
+      <base href="/">
+     <link href='https://fonts.googleapis.com/css?family=Fjalla+One' rel='stylesheet' type='text/css'>
+      <link rel="stylesheet" href="assests/libs/bootstrap.min.css">
+      <link rel="stylesheet" href="assests/libs/animate.css">
+      <link rel="stylesheet" href="assests/css/font-awesome.min.css">
+      <link rel="stylesheet" href="assests/css/stylesheet.css">
+
+
+      <script src="assests/libs/angular.min.js"></script>
+      <script src="assests/libs/angular.route.js"></script>
+      <script src="assests/libs/angular.animate.js"></script>
+      <script src="app/services/developer.js"></script>
+      <script src="app/services/authenticate.js"></script>
+      <script src="app/routes/route.js"></script>
+      <script src="app/filters/filter.js"></script>
+      <script src="app/app.js"></script>
+
+
+
+   </head>
+   <body ng-controller="mainCtrl as main">
+      <header class="mainHeader">
+         <div class="titleDiv">
+            <i class="fa fa-graduation-cap fa-2x icon"></i>
+            <h1 class="title">DeVeS</h1>
+         </div>
+
+         <ul class="mainNav">
+            <li><a href="/">Home</a></li
+            ><li><a href="/devs/pub/all">Deves  </a><i class="fa fa-caret-down"></i></li
+            ><li><a href="/about">About</a></li
+            ><li><a href="/login">Login</a></li>
+         </ul>
+
+         <div  id="user" class="userInfoDiv" ng-show="main.loggedIn"
+         ><ul
+         ><li><a href="/profile">{{userLogOutData.name}}</a></li
+            ><li><a ng-click="main.doLogOut()" href="#" >log out</a></li>
+            </ul>
+         </div>
+
+      </header>
+
+
+      <div ng-view ng-controller="mainCtrl as main" ></div>
+      <script src="assests/libs/jquery.js"></script>
+      <script src="assests/scripts/script.js"></script>
+   </body>
+</html>

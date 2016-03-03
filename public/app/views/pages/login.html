@@ -1,0 +1,40 @@
+<div class="loginView">
+   <div class="panel panel-default loginOrSignInDiv">
+      <div class="panel-heading">
+         <h3 class="panel-title">Sign In</h3>
+      </div>
+      <div class="panel-body">
+
+            <!-- creating bootstrap form  -->
+            <div class="loginFormDiv">
+               <form class="form-horizontal" ng-Submit="login.doLogIn()">
+                  <div class="form-group">
+                     <label for="email" class="col-sm-2 control-label">Email</label>
+                     <div class="col-sm-10">
+                        <input type="email" name="email" ng-model="login.loginData.email" class="form-control" id="email" placeholder="Email" required>
+                     </div>
+                  </div>
+                  <div class="form-group">
+                     <label for="password" class="col-sm-2 control-label">Password</label>
+                     <div class="col-sm-10">
+                        <input type="password" name="password" ng-model="login.loginData.password"  class="form-control" id="password" placeholder="Password" required>
+                     </div>
+                  </div>
+
+                  <div class="form-group">
+                     <div class="col-sm-offset-2 col-sm-10">
+                        <h5 class="alert alert-danger" ng-if="login.err">{{login.err}}</h5>
+                        <button type="submit" class="btn btn-default">
+                           Sign In
+                        </button>
+                        <a href="/signup">Don't have an account? Create one!</a><br>
+
+                     </div>
+                  </div>
+               </form>
+            </div>
+            <!-- form end  -->
+
+      </div>
+   </div>
+</div>
